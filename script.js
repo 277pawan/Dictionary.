@@ -138,7 +138,17 @@ document.addEventListener('keydown',function(e){
 })
 
 
+
+
+
+
 // Random word API.
+
+
+
+
+
+
 const uni=new XMLHttpRequest();
 uni.open("GET",`https://random-word-api.herokuapp.com/word`,
   true);
@@ -218,6 +228,58 @@ day.addEventListener('click',function()
     }
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // API for translating the english to hindi .
