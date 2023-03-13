@@ -21,9 +21,22 @@
         <title>Dictionary</title>
     </head>
     <body>
-        <center><h1><abbr title="277pawan">BDictionary</abbr></h1></center>
-        <audio id="sound"></audio>
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">PB</label>
+        <ul>
+          <li><a  id="wordofday">wordofday</a></li>
+          <li><a href="translate.html">Translater</a></li>
+          <li><a href="#">Plagchecker</a></li>
+          <li><a href="#">open account</a></li>
+        </ul>
+      </nav>
+    
         <div class="container">
+      
             <div class="search-box">
                 <input
                     type="text"
@@ -33,7 +46,9 @@
                 <button id="search-btn">Search</button>
             </div>
             <div class="result" id="result"></div>
-        </div>
+            
+        </div><br>
+    
         <!-- Script -->
 
 
@@ -53,8 +68,15 @@
         <p class="word-example">
             ${data[0].meanings[0].definitions[0].example || ""}
         </p> -->
-        <p class="copyright">
-            <!-- <button class="reset">reset</button> -->
+      
+      
+      
+        <!-- Copyright statement -->
+
+
+
+        <!-- <p class="copyright">
+            <button class="reset">reset</button>
           &copy; Copyright by
           <a
             class="github-link"
@@ -62,7 +84,19 @@
             href="https://github.com/277pawan"
             >Pawan Bisht</a
           >. Find Your Words.
-        </p>
+        </p> -->
+      
+      
+      
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p></p>
+          </div>
+        </div>
+       
+       
+        <script src="countries.js"></script>
         <script src="script.js"></script>
 
     </body>
