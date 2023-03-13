@@ -1,3 +1,5 @@
+'use strict'
+
 const fromtext=document.querySelector(".from-text");
 const totext=document.querySelector(".to-text");
 const translatebtn=document.getElementById("trans");
@@ -33,6 +35,9 @@ translatebtn.addEventListener("click", () => {
       totext.value = data2.responseData.translatedText;
   });
 });
+
+
+
 
 icons.forEach(icon => {
   icon.addEventListener("click", ({target}) => {
@@ -71,5 +76,54 @@ icons.forEach(icon => {
 
 
 // Code of translater in dictionary.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
