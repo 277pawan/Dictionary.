@@ -228,10 +228,6 @@ a:hover{
   .fade-in {
     animation: fade-in 1s ease-in-out;
   }
-  
-
-
-
   .container1{
 
     margin-top: 12%;
@@ -284,22 +280,16 @@ a:hover{
   
     box-shadow:  5px -5px 0px #786cb0,
       -5px 5px 0px #e4ccff;
-      
-    }
-    }
-  .wrapper{
+    } }  .wrapper{
     border-radius: 5px;
     border: 2px solid #ffffff;
-  }
-  .wrapper .text-input{
+  }  .wrapper .text-input{
     display: flex;
     border-bottom: 2px solid #ffffff;
-  }
-  .text-input .to-text{
+}  .text-input .to-text{
     border-radius: 0px;
     border-left: 2px solid #ffffff;
-  }
-  .text-input textarea{
+  }  .text-input textarea{
     height: 250px;
     width: 100%;
     color:white;
@@ -310,31 +300,25 @@ a:hover{
     font-size: 18px;
     padding: 10px 15px;
     border-radius: 5px;
-  }
-  .text-input textarea::placeholder{
+  }  .text-input textarea::placeholder{
     color: #ffffff;
-  }
-  .controls, li, .icons, .icons i{
+  }  .controls, li, .icons, .icons i{
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  .controls{
+  }  .controls{
     list-style: none;
     padding: 12px 15px;
-  }
-  .controls .row .icons{
+  }  .controls .row .icons{
     width: 38%;
-  }
-  .controls .row .icons i{
+  }  .controls .row .icons i{
     width: 50px;
     color: #adadad;
     font-size: 14px;
     cursor: pointer;
     transition: transform 0.2s ease;
     justify-content: center;
-  }
-  .controls .row.from .icons{
+  }  .controls .row.from .icons{
     padding-right: 15px;
     border-right: 1px solid #ccc;
   }
@@ -442,7 +426,6 @@ left: 35%;
     text-align: center;
     color: rgb(0, 0, 0);
   }
-
   @media screen and (min-width: 400px) and (max-width: 700px){
     .copyright {
         position:absolute;
@@ -451,7 +434,4 @@ left: 35%;
             font-size: 1.3rem;
             text-align: center;
             color: rgb(0, 0, 0);
-          } 
-  }
-
-
+          }}
