@@ -1,4 +1,7 @@
-const countries = {
+
+
+const countries =
+      {
     "am-ET": "Amharic",
     "ar-SA": "Arabic",
     "be-BY": "Bielarus",
@@ -97,4 +100,44 @@ const countries = {
     "yi-YD": "Yiddish",
     "zu-ZA": "Zulu"
 }
+
+
+
+
+
 // console.log(countries);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
