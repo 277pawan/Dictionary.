@@ -15,6 +15,12 @@ for(let country_code in countries)
 
 });
 
+
+
+
+
+
+
 translatebtn.addEventListener("click", () => {
   let text = fromtext.value.trim();
   let translateFrom = selecttag[0].value;
@@ -31,24 +37,39 @@ translatebtn.addEventListener("click", () => {
 icons.forEach(icon => {
   icon.addEventListener("click", ({target}) => {
       // if(!fromText.value || !toText.value) return;
-      if(target.classList.contains("fa-copy")) {
-          if(target.id == "from") {
+      if(target.classList.contains("fa-copy"))
+      {
+          if(target.id == "from") 
+          {
               navigator.clipboard.writeText(fromtext.value);
-          } else {
+          }
+        else
+        {
               navigator.clipboard.writeText(totext.value);
           }
-      } else {
+      } 
+    else 
+    {
           let utterance;
-          if(target.id == "from") {
+          if(target.id == "from") 
+          {
               utterance = new SpeechSynthesisUtterance(fromtext.value);
               utterance.lang = selecttag[0].value;
-          } else {
+          }
+      else
+      {
               utterance = new SpeechSynthesisUtterance(totext.value);
               utterance.lang = selecttag[1].value;
-          }
+        }
           speechSynthesis.speak(utterance);
       }
   });
+  
+  
+  
 });
+
+
+// Code of translater in dictionary.
 
 
