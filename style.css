@@ -15,11 +15,7 @@ body {
     left: 50%;
     padding: 80px 50px;
     border-radius: 10px;
-    z-index:-1;
-    /* z-index:-1; */
-  
-   
-}
+    z-index:-1;}
 .container:hover {
     background-color: #ffffff;
     width: 90vmin;
@@ -30,9 +26,7 @@ body {
    
     padding: 80px 50px;
     border-radius: 10px;
-    box-shadow:  5px -5px 0px #786cb0,
-             -5px 5px 0px #e4ccff;
-             
+    box-shadow:  5px -5px 0px #786cb0,-5px 5px 0px #e4ccff;
 }
 .search-box {
     width: 100%;
@@ -98,7 +92,6 @@ body {
     margin-top: 80px;
     text-align: center;
 }
-
 *{
   padding: 0;
   margin: 0;
@@ -218,13 +211,10 @@ a:hover{
     border:10px outset black;
     width: 80%; 
   }
-  
-  
   @keyframes fade-in {
     from { opacity: 0; }
     to { opacity: 1; }
   }
-  
   .fade-in {
     animation: fade-in 1s ease-in-out;
   }
@@ -241,19 +231,15 @@ a:hover{
 
   }
   .container1:hover{
-
     margin-top: 12%;
     margin-left:28%;
     max-width: 690px;
-  
     width: 100%;
     padding: 30px;
     background: #000000;
     border-radius: 7px;
-
   box-shadow:  5px -5px 0px #786cb0,
     -5px 5px 0px #e4ccff;
-    
   }
   @media (min-width: 400px) and (max-width: 700px)
   {
@@ -266,9 +252,7 @@ a:hover{
       background: #060606;
       border-radius: 7px;
     }
-
     .container1:hover{
-
       margin-top: 25%;
       margin-left:0%;
       max-width: 690px;
@@ -277,7 +261,6 @@ a:hover{
       padding: 30px;
       background: #000000;
       border-radius: 7px;
-  
     box-shadow:  5px -5px 0px #786cb0,
       -5px 5px 0px #e4ccff;
     } }  .wrapper{
