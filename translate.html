@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>
+            Translater.
+        </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Font Awesome -->
+        
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!-- <link rel="icon" href="favicon.png" type="image/png"> -->
+        
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="style.css" />
+
+
+
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">PB</label>
+            <ul>
+              <li><a  href="index.html">Dictionary</a></li>
+              <li><a href="translate.html">Translater</a></li>
+              <li><a href="#">Plagchecker</a></li>
+              <li><a href="#">open account</a></li>
+            </ul>
+          </nav>
+<br>
+        
+        <div class="container1">
+            <div class="wrapper">
+              <div class="text-input">
+                <textarea spellcheck="false" class="from-text" placeholder="Enter text"></textarea>
+                <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Translation..."></textarea>
+              </div>
+              <ul class="controls">
+                <li class="row from">
+                  <div class="icons">
+                    <i id="from" class="fas fa-volume-up"></i>
+                    <i id="from" class="fas fa-copy"></i>
+                  </div>
+                  <select></select>
+                </li>
+            
+                <li class="row to">
+                  <select></select>
+                  <div class="icons">
+                    <i id="to" class="fas fa-volume-up"></i>
+                    <i id="to" class="fas fa-copy"></i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <button id ="trans"class="Translate">Translate Text</button>
+          </div>
+          <script src="countries.js"></script>
+          <script src="translate.js"></script>
+    </body>
+
+    </html>
