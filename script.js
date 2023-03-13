@@ -8,6 +8,14 @@ const result=document.getElementById("result");
 const wordday=document.querySelector(".modal-content");
 const sound=document.getElementById("sound");
 const audio=document.getElementsByTagName('audio'); 
+
+
+
+
+// Way of generating a fetch call with a XML.
+
+
+
 // const getsearchdata=function (search){
 //     *******Fetching the code using old method **********
 // function render2(){
@@ -153,6 +161,15 @@ wordday.innerHTML=` <center style="color:blue;font-size:50px;"><u>Word of the da
 
    });
 // Random word API ends Headers.
+
+
+
+
+
+
+
+
+
 
 
 
