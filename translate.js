@@ -5,6 +5,21 @@ const totext=document.querySelector(".to-text");
 const translatebtn=document.getElementById("trans");
 const selecttag=document.querySelectorAll("select");
 const icons=document.querySelectorAll(".row i");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 selecttag.forEach((tag,id)=>{
 for(let country_code in countries)
 {
