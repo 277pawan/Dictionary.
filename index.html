@@ -8,7 +8,110 @@
         <!-- <link rel="icon" href="favicon.png" type="image/png"> -->
         
         <link
+            rel="stylesheet"<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Font Awesome -->
+        
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!-- <link rel="icon" href="favicon.png" type="image/png"> -->
+        
+        <link
             rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="style.css" />
+        <title>Dictionary</title>
+    </head>
+    <body>
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">PB</label>
+        <ul>
+          <li><a  id="wordofday">wordofday</a></li>
+          <li><a href="translate.html">Translater</a></li>
+          <li><a href="#">Plagchecker</a></li>
+          <li><a href="#">open account</a></li>
+        </ul>
+      </nav>
+    
+        <div class="container">
+      
+            <div class="search-box">
+                <input
+                    type="text"
+                    placeholder="Type the word here.."
+                    id="inp-word"
+                />
+                <button id="search-btn">Search</button>
+            </div>
+            <div id="loading"class="loader"></div>
+            <div class="result" id="result"></div>
+            
+        </div><br>
+    
+        <!-- Script -->
+
+
+        <!-- <div class="word">
+            <h3>${inpWord}</h3>
+            <button onclick="playSound()">
+                <i class="fas fa-volume-up"></i>
+            </button>
+        </div>
+        <div class="details">
+            <p>${data[0].meanings[0].partOfSpeech}</p>
+            <p>/${data[0].phonetic}/</p>
+        </div>
+        <p class="word-meaning">
+           ${data[0].meanings[0].definitions[0].definition}
+        </p>
+        <p class="word-example">
+            ${data[0].meanings[0].definitions[0].example || ""}
+        </p> -->
+      
+      
+      
+        <!-- Copyright statement -->
+
+
+
+        <!-- <p class="copyright">
+            <button class="reset">reset</button>
+          &copy; Copyright by
+          <a
+            class="github-link"
+            target="_blank"
+            href="https://github.com/277pawan"
+            >Pawan Bisht</a
+          >. Find Your Words.
+        </p> -->
+      
+      
+      
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p></p>
+          </div>
+        </div>
+       
+       
+        <script src="countries.js"></script>
+        <script src="script.js"></script>
+
+    </body>
+</html>
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         />
 
