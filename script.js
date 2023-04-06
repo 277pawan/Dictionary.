@@ -53,59 +53,64 @@ const audio=document.getElementsByTagName('audio');
 //  **********Old method ends here*************
 
 
-
-function render(){
-let inpWord=document.getElementById("inp-word").value;
- fetch(`${url}${inpWord}`)
-.then((response)=>response.json())
-.then((data)=>{
-  console.log(data);
-
-  result.innerHTML=` 
- <div class="word">
- <h3>${inpWord}</h3>
-
-</div>
-<div class="details">
- <p>${data[0].meanings[0].partOfSpeech}</p>
- <p>/${data[0].phonetic}/</p>
-</div>
-<p class="word-meaning">
-${data[0].meanings[0].definitions[0].definition}
-</p>
-<p class="word-example">
- ${data[0].meanings[0].definitions[0].example || ""}
-</p>`;
-// contain.insertAdjacentHTML('beforeend', html);
-play();
-});
-};
-// sound.forEach(icon1 => {
-// icon1.addEventListener("click",({target})=>{
-//   if(target.id=='sound')
-//   {
-//     let utter;
-//     utter=new SpeechSynthesisUtterance(inpWord.value);
-  
-//   }
-//   speechSynthesis.speak(utterance);
-//   });
-// }
-// );
-
-btn.addEventListener('click',()=>{
+async function render(){
+  try{
+    // console.log("Pawan is a hero")
+    let inpWord=document.getElementById("inp-word").value;
+    // console.log(inpWord);
+    const response=await fetch(`${url}${inpWord}`);
+    const data=await response.json();
+    // console.log(data)
+    return data;
+  }
+  catch(error)
+  {
+    console.log("Error");
+  }
+}
+async function display(){
+try{
+  let inpWord=document.getElementById("inp-word").value;
+  // console.log(inpWord);
+  document.getElementById('loading').style.display="block";
   render()
+  .then(data=>{
+    // console.log(data)
+    document.getElementById('loading').style.display="none";
+
+    result.innerHTML=` 
+    <div class="word">
+    <h3>${inpWord}</h3>
+   
+   </div>
+   <div class="details">
+    <p>${data[0].meanings[0].partOfSpeech}</p>
+    <p>/${data[0].phonetic}/</p>
+   </div>
+   <p class="word-meaning">
+   ${data[0].meanings[0].definitions[0].definition}
+   </p>
+   <p class="word-example">
+    ${data[0].meanings[0].definitions[0].example || ""}
+   </p>`;
+  });
+}
+catch(error)
+{
+  console.log("Error in fetching");
+}
+}
+// function render(){
 // let inpWord=document.getElementById("inp-word").value;
-// fetch(`${url}${inpWord}`)
+//  fetch(`${url}${inpWord}`)
 // .then((response)=>response.json())
 // .then((data)=>{
 //   console.log(data);
-// result.innerHTML=` 
+
+//   result.innerHTML=` 
 //  <div class="word">
 //  <h3>${inpWord}</h3>
-//  <button onclick="playSound()">
-//      <i class="fas fa-volume-up"></i>
-//  </button>
+
 // </div>
 // <div class="details">
 //  <p>${data[0].meanings[0].partOfSpeech}</p>
@@ -117,15 +122,17 @@ btn.addEventListener('click',()=>{
 // <p class="word-example">
 //  ${data[0].meanings[0].definitions[0].example || ""}
 // </p>`;
-// // contain.insertAdjacentHTML('beforeend', html);
-// sound.setAttribute("src",`https:${data[0].phonetics[0].audio}`);
-// })
+// });
+// };
+
+btn.addEventListener('click',()=>{
+  display();
 });
 
 document.addEventListener('keydown',function(e){
   if(e.key==='Enter')
   {
-    render();
+    display();
   }
 })
 
@@ -203,7 +210,6 @@ day.addEventListener('click',function()
 
 
 // API for translating the english to hindi .
-
 
 
 
