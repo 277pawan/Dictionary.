@@ -140,9 +140,9 @@ nav ul li a{
   text-transform: uppercase;
 }
 a:hover{
-  background: #fff;
+  background: #000000;
   transition: .5s;
-  color: #022f69;
+  color: #000000;
 }
 .checkbtn{
   font-size: 30px;
@@ -203,7 +203,7 @@ a:hover{
   }
   a:hover, a.active{
     background: none;
-    color: #0082e6;
+    color: #000000;
   }
   #check:checked ~ ul{
     left: 0;
@@ -466,5 +466,25 @@ left: 35%;
             color: rgb(0, 0, 0);
           } 
   }
-
+  .loader{
+    display:none;
+    width:64px;
+    height:64px;
+    margin-top:10%;
+    margin-left:42%;
+    border-radius:50%;
+    border:12px solid purple;
+    border-color:blue transparent blue transparent;
+    animation:load 1.2s linear infinite;
+    }
+    @keyframes load{
+    from
+    {
+    transform:rotate(0deg);
+    }
+    to
+    {
+    transform:rotate(360deg);
+    }
+    }
 
