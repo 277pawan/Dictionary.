@@ -207,9 +207,3 @@ day.addEventListener('click',function()
     }
   });
 });
-
-
-// API for translating the english to hindi .
-
-
-
